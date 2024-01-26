@@ -33,13 +33,14 @@ const Hero = () => {
           onMouseLeave={() => {
             setIsHovered(false);
           }}
+          className="text-8xl uppercase font-black text-center px-[20vw]"
         >
           Hidding bad shit since 2009
         </p>
       </motion.div>
 
       <div className={styles.body}>
-        <p>
+        <p className="text-8xl uppercase font-black text-center px-[20vw]">
           Making <span>Good Shit</span> Since 2009
         </p>
       </div>

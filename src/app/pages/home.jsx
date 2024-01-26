@@ -3,7 +3,7 @@ import Hero from "@/components/home/hero";
 import DetailContainer from "@/components/home/detailContainer";
 import ExperienceDummy from "@/components/static/experience";
 import AboutDummy from "@/components/static/about";
-import Works from "@/components/home/works";
+import Works from "@/components/home/projects";
 
 const Home = () => {
   return (
@@ -27,7 +27,7 @@ const Home = () => {
       <DetailContainer datas={ExperienceDummy} />
       <About
         title="Works"
-        body="I have worked with some of the innovative industry leaders to help build their top notch products"
+        body="I was working with innovative industry and help them build their top notch products"
         masked="I was only small part of large team. They probabily have no idea that I Exist"
       />
       <Works />
