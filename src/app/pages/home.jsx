@@ -22,7 +22,7 @@ const Home = () => {
       <About
         title="Experience"
         body="Only 7 years of actively producing Cool Shit. Other years was messing around & Navigate throught my career"
-        masked="Almost Decade of Experience in interactive design and working with some of the most Talented peaple in business"
+        masked="Almost Decade of Experience in interactive design and working with some of Talented peaple in business"
       />
       <DetailContainer datas={ExperienceDummy} />
       <About

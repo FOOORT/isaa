@@ -22,7 +22,7 @@ const About = ({ title, body, masked }) => {
           {title}
         </h2>
         <p
-          className=" text-3xl md:text-auto"
+          className=" text-3xl md:text-7xl font-black"
           onMouseEnter={() => {
             setIsHovered(true);
           }}
@@ -36,7 +36,7 @@ const About = ({ title, body, masked }) => {
 
       <div className={styles.body}>
         <h2 className="uppercase tracking-widest text-sm text-left">{title}</h2>
-        <p className=" text-3xl md:text-auto">{masked}</p>
+        <p className=" text-3xl md:text-7xl font-black">{masked}</p>
       </div>
     </main>
   );
