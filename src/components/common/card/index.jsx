@@ -39,7 +39,7 @@ const Card = ({
         <div className={styles.body}>
           <div className={styles.description}>
             <p>{description}</p>
-            <span>
+            <span className="">
               <a href={url} target="_blank">
                 <MagnetIcon
                   icon={
