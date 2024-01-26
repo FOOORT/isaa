@@ -35,13 +35,13 @@ const Hero = () => {
           }}
           className="text-5xl md:text-8xl uppercase font-black text-center px-[8vw] md:px-[20vw]"
         >
-          Hidding bad shit since 2009
+          Hidding bad shit since 2021
         </p>
       </motion.div>
 
       <div className={styles.body}>
         <p className="text-5xl md:text-8xl uppercase font-black text-center px-[8vw] md:px-[20vw]">
-          Making <span>Good Shit</span> Since 2009
+          Making <span>Good Shit</span> Since 2021
         </p>
       </div>
     </main>
