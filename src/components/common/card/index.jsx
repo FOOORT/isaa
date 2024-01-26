@@ -39,7 +39,7 @@ const Card = ({
         <div className={styles.body}>
           <div className={styles.description}>
             <p>{description}</p>
-            <span className="my-8 md:my-0">
+            {/* <span className="my-8 md:my-0">
               <a href={url} target="_blank">
                 <MagnetIcon
                   icon={
@@ -58,7 +58,7 @@ const Card = ({
                   }
                 />
               </a>
-            </span>
+            </span> */}
           </div>
 
           <div className={styles.imageContainer}>
