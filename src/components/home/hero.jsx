@@ -1,12 +1,17 @@
 "use client";
+import { useState } from "react";
 import Logo from "../logo";
 import Menus from "../menus";
 import Socials from "../socials";
 import Sound from "../sound";
 import styles from "./css/about.module.scss";
 import { motion } from "framer-motion";
+import useMousePosition from "@/app/utils/useMousePosition";
 
-export default function Hero({ isHovered, setIsHovered, x, y, size }) {
+const Hero = () => {
+  const [isHovered, setIsHovered] = useState(false);
+  const { x, y } = useMousePosition();
+  const size = isHovered ? 400 : 40;
   return (
     <main className={styles.main}>
       <Logo />
@@ -40,4 +45,6 @@ export default function Hero({ isHovered, setIsHovered, x, y, size }) {
       </div>
     </main>
   );
-}
+};
+
+export default Hero;

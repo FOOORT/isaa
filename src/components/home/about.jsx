@@ -1,8 +1,13 @@
 "use client";
+import { useState } from "react";
 import styles from "./css/about.module.scss";
 import { motion } from "framer-motion";
+import useMousePosition from "../../app/utils/useMousePosition";
 
-export default function About({isHovered, setIsHovered, x, y, size }) {
+const About = ({ title, body, masked }) => {
+  const [isHovered, setIsHovered] = useState(false);
+  const { x, y } = useMousePosition();
+  const size = isHovered ? 400 : 40;
   return (
     <main className={styles.main}>
       <motion.div
@@ -13,7 +18,11 @@ export default function About({isHovered, setIsHovered, x, y, size }) {
         }}
         transition={{ type: "tween", ease: "backOut", duration: 0.5 }}
       >
+        <h2 className="uppercase tracking-widest text-black text-sm">
+          {title}
+        </h2>
         <p
+          className=" text-3xl md:text-auto"
           onMouseEnter={() => {
             setIsHovered(true);
           }}
@@ -21,17 +30,16 @@ export default function About({isHovered, setIsHovered, x, y, size }) {
             setIsHovered(false);
           }}
         >
-          A visual designer - with skills that havent been replaced by A.I (yet)
-          - making good shit only if the paycheck is equally good.
+          {body}
         </p>
       </motion.div>
 
       <div className={styles.body}>
-        <p>
-          Im a <span>selectively skilled</span> product designer with strong
-          focus on producing high quality & impactful digital experience.
-        </p>
+        <h2 className="uppercase tracking-widest text-sm text-left">{title}</h2>
+        <p className=" text-3xl md:text-auto">{masked}</p>
       </div>
     </main>
   );
-}
+};
+
+export default About;

@@ -17,13 +17,15 @@ const Earth = dynamic(() => import("../services/earth"), {
   ),
 });
 
-export default function Services() {
+const DetailContainer = ({ datas }) => {
   return (
     <SmoothScroll>
       <main className={styles.main}>
         <Earth />
-        <Projects />
+        <Projects datas={datas} />
       </main>
     </SmoothScroll>
   );
-}
+};
+
+export default DetailContainer;

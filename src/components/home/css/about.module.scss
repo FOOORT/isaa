@@ -1,11 +1,19 @@
 .main {
-  height: 100vh;
+  height: 100%;
+  padding-top: 8vh;
+  padding-bottom: 8vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
   .mask,
   .body {
     width: 100%;
     height: 100%;
     display: flex;
+    flex-direction: column;
+    gap: -5px;
     align-items: center;
     justify-content: center;
     color: #afa18f;
@@ -13,9 +21,13 @@
     line-height: 66px;
     cursor: default;
 
+    h2 {
+      width: 60%;
+    }
     p {
-      width: 1000px;
-      padding: 40px;
+      width: 60%;
+      padding-top: 40px;
+      padding-bottom: 40px;
     }
     span {
       color: #ec4e39;

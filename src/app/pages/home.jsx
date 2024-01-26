@@ -1,34 +1,36 @@
 import About from "@/components/home/about";
 import Hero from "@/components/home/hero";
-import Services from "@/components/home/services";
-import React from "react";
+import DetailContainer from "@/components/home/detailContainer";
+import ExperienceDummy from "@/components/static/experience";
+import AboutDummy from "@/components/static/about";
+import Works from "@/components/home/works";
 
-const Home = ({ isHovered, setIsHovered, x, y, size }) => {
+const Home = () => {
   return (
     <div>
-      <Hero
-        isHovered={isHovered}
-        setIsHovered={setIsHovered}
-        x={x}
-        y={y}
-        size={size}
-      />
+      <div className="h-screen w-screen">
+        <Hero />
+      </div>
       <About
-        isHovered={isHovered}
-        setIsHovered={setIsHovered}
-        x={x}
-        y={y}
-        size={size}
+        title="About"
+        body="A visual designer - with skills that havent been replaced by A.I (yet)
+          - making good shit only if the paycheck is equally good."
+        masked="Im a selectively skilled product designer with strong
+          focus on producing high quality & impactful digital experience."
       />
-      <Services />
+      <DetailContainer datas={AboutDummy} />
       <About
-        isHovered={isHovered}
-        setIsHovered={setIsHovered}
-        x={x}
-        y={y}
-        size={size}
+        title="Experience"
+        body="Only 7 years of actively producing Cool Shit. Other years was messing around & Navigate throught my career"
+        masked="Almost Decade of Experience in interactive design and working with some of the most Talented peaple in business"
       />
-      <Services />
+      <DetailContainer datas={ExperienceDummy} />
+      <About
+        title="Works"
+        body="I have worked with some of the innovative industry leaders to help build their top notch products"
+        masked="I was only small part of large team. They probabily have no idea that I Exist"
+      />
+      <Works />
     </div>
   );
 };
