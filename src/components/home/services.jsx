@@ -3,13 +3,21 @@ import React from "react";
 import dynamic from "next/dynamic";
 import SmoothScroll from "../services/smoothScroll";
 import Projects from "../services/projects";
+import Image from "next/image";
 
 const Earth = dynamic(() => import("../services/earth"), {
   ssr: false,
-  loading: () => <img src="/assets/placeholder.png"></img>,
+  loading: () => (
+    <Image
+      src="/assets/placeholder.png"
+      width={300}
+      height={300}
+      alt="earth Pic"
+    />
+  ),
 });
 
-export default function Home() {
+export default function Services() {
   return (
     <SmoothScroll>
       <main className={styles.main}>
