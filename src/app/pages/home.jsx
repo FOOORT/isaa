@@ -4,6 +4,7 @@ import DetailContainer from "@/components/home/detailContainer";
 import ExperienceDummy from "@/components/static/experience";
 import AboutDummy from "@/components/static/about";
 import Works from "@/components/home/projects";
+import Footer from "@/components/home/footer";
 
 const Home = () => {
   return (
@@ -31,6 +32,7 @@ const Home = () => {
         masked="I was only small part of large team. They probabily have no idea that I Exist"
       />
       <Works />
+      <Footer/>
     </div>
   );
 };
