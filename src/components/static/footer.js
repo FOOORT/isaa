@@ -6,8 +6,8 @@ export const LeftDummy = [
     speed: 2.6,
   },
   {
-    title: "Linkedin",
-    description: "Serius me",
+    title: "Instagram",
+    description: "Not tiktok",
     speed: 3.8,
   },
 ];
@@ -15,13 +15,13 @@ export const LeftDummy = [
 // Center.js
 export const Center = [
   {
-    title: "Instagram",
-    description: "Not tiktok",
+    title: "Github",
+    description: "mansurisaa",
     speed: 2.6,
   },
   {
-    title: "Instagram",
-    description: "Not tiktok",
+    title: "Website",
+    description: "fromafrica.com",
     speed: 3.8,
   },
 ];
@@ -29,13 +29,13 @@ export const Center = [
 // RightDummy.js
 export const RightDummy = [
   {
-    title: "Website",
-    description: "Serius me",
+    title: "Email",
+    description: "mansurisaa6@gmail.com",
     speed: 2.6,
   },
   {
-    title: "Website",
-    description: "Serius me",
+    title: "Phone",
+    description: "+250 787 222 766",
     speed: 3.8,
   },
 ];
